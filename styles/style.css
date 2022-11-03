@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFD60A;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #001D3D;
+}
+nav .nav__experiencelink, nav .nav__educationlink, nav .nav__contactlink {
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+  background-color: #001D3D;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: #003566;
+}
+header img {
+  max-height: 800px;
+}
+
+.header-lh {
+  width: 33%;
+}
+
+.header-rh {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
+
+.experience {
+  background-color: #003566;
+}
+
+.education {
+  background-color: #003566;
+}
+
+.interests {
+  background-color: #003566;
+}
+
+.contact {
+  background-color: #003566;
+}
+
+footer {
+  background-color: #001D3D;
+}/*# sourceMappingURL=style.css.map */

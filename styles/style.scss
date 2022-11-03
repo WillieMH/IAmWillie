@@ -1,0 +1,66 @@
+@use "./_variables.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $schema5;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: $schema2;
+
+  .nav__experiencelink, .nav__educationlink, .nav__contactlink {
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+    background-color: $schema2;
+  }
+}
+
+
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: $schema3;
+
+  img {
+    max-height: 800px;
+  }
+}
+
+.header-lh {
+  width: 33%;
+}
+
+.header-rh {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
+
+.experience {
+  background-color: $schema3;
+}
+
+.education {
+  background-color: $schema3;
+}
+
+.interests {
+  background-color: $schema3;
+}
+
+.contact {
+  background-color: $schema3;
+}
+
+footer {
+  background-color: $schema2;
+}
+
