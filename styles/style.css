@@ -36,6 +36,7 @@ header img {
   display: flex;
   flex-direction: column;
   width: 67%;
+  margin-top: 30px;
 }
 
 .experience {
