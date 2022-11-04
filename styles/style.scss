@@ -1,10 +1,13 @@
 @use "./_variables.scss" as *;
+@use "./_breakpoints.scss" as *;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $schema3;
   color: $schema5;
+  font-family: "Poppins", serif;
 }
 
 nav {
@@ -26,16 +29,17 @@ nav {
 
 header {
   display: flex;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   background-color: $schema3;
-
-  img {
-    max-height: 800px;
-  }
 }
 
 .header-lh {
   width: 33%;
+
+  img {
+    max-height: 800px;
+  }
 }
 
 .header-rh {
@@ -43,6 +47,42 @@ header {
   flex-direction: column;
   width: 67%;
   margin-top: 30px;
+  
+
+  .header-rh__typewriter {
+    font-size: 120px;
+    letter-spacing: 8px;
+
+    .tw {
+      font-size: 120px;
+      color: $schema4;
+    }
+  }
+
+  .header-rh__about {
+    display: flex;
+    flex-direction: column;
+
+  .header-rh__about-title {
+      font-size: 40px;
+    }
+
+    .header-rh__about-line {
+      border: 2px solid $schema4;
+      border-radius: 10px;
+      height: 4px;
+      width: 200px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+  }
+
+}
+
+main {
+  width: 80%;
+  margin: auto;
 }
 
 .experience {
@@ -63,5 +103,6 @@ header {
 
 footer {
   background-color: $schema2;
+  text-align: center;
 }
 

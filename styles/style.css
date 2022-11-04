@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@media only screen and (max-width: 1200px) {
+  .header-lh {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #003566;
   color: #FFD60A;
+  font-family: "Poppins", serif;
 }
 
 nav {
@@ -21,15 +29,16 @@ nav .nav__experiencelink, nav .nav__educationlink, nav .nav__contactlink {
 
 header {
   display: flex;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   background-color: #003566;
-}
-header img {
-  max-height: 800px;
 }
 
 .header-lh {
   width: 33%;
+}
+.header-lh img {
+  max-height: 800px;
 }
 
 .header-rh {
@@ -37,6 +46,34 @@ header img {
   flex-direction: column;
   width: 67%;
   margin-top: 30px;
+}
+.header-rh .header-rh__typewriter {
+  font-size: 120px;
+  letter-spacing: 8px;
+}
+.header-rh .header-rh__typewriter .tw {
+  font-size: 120px;
+  color: #FFC300;
+}
+.header-rh .header-rh__about {
+  display: flex;
+  flex-direction: column;
+}
+.header-rh .header-rh__about .header-rh__about-title {
+  font-size: 40px;
+}
+.header-rh .header-rh__about .header-rh__about-line {
+  border: 2px solid #FFC300;
+  border-radius: 10px;
+  height: 4px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+main {
+  width: 80%;
+  margin: auto;
 }
 
 .experience {
@@ -57,4 +94,5 @@ header img {
 
 footer {
   background-color: #001D3D;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
