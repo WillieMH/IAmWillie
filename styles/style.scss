@@ -55,29 +55,27 @@ header {
 
     .tw {
       font-size: 120px;
-      color: $schema4;
+      color: $schema5;
     }
   }
 
   .header-rh__about {
     display: flex;
     flex-direction: column;
-
-  .header-rh__about-title {
-      font-size: 40px;
-    }
-
-    .header-rh__about-line {
-      border: 2px solid $schema4;
-      border-radius: 10px;
-      height: 4px;
-      width: 200px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
-
   }
+}
 
+.title {
+  font-size: 40px;
+}
+
+.divider-line1 {
+  border: 2px solid $schema4;
+  border-radius: 10px;
+  height: 4px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 main {

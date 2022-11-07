@@ -53,16 +53,18 @@ header {
 }
 .header-rh .header-rh__typewriter .tw {
   font-size: 120px;
-  color: #FFC300;
+  color: #FFD60A;
 }
 .header-rh .header-rh__about {
   display: flex;
   flex-direction: column;
 }
-.header-rh .header-rh__about .header-rh__about-title {
+
+.title {
   font-size: 40px;
 }
-.header-rh .header-rh__about .header-rh__about-line {
+
+.divider-line1 {
   border: 2px solid #FFC300;
   border-radius: 10px;
   height: 4px;
