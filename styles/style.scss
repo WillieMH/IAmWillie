@@ -1,6 +1,5 @@
 @use "./_variables.scss" as *;
-@use "./_breakpoints.scss" as *;
-@use "./_collapsibles" as *;
+@use "./_collapsibles.scss" as *;
 
 * {
   margin: 0;
@@ -34,37 +33,43 @@ header {
   width: 80%;
   margin: auto;
   background-color: $schema3;
-}
 
-.header-lh {
-  width: 33%;
-
-  img {
-    max-height: 800px;
-  }
-}
-
-.header-rh {
-  display: flex;
-  flex-direction: column;
-  width: 67%;
-  margin-top: 30px;
+  .header__lh {
+    width: 33%;
   
-
-  .header-rh__typewriter {
-    font-size: 120px;
-    letter-spacing: 8px;
-
-    .tw {
-      font-size: 120px;
-      color: $schema5;
+    img {
+      max-height: 800px;
     }
   }
-
-  .header-rh__about {
+  
+  .header__rh {
     display: flex;
     flex-direction: column;
-  }
+    width: 67%;
+    margin-top: 30px;
+    
+  
+    .header__rh-typewriter {
+      font-size: 120px;
+      letter-spacing: 8px;
+  
+      .tw {
+        font-size: 120px;
+        color: $schema5;
+      }
+    }
+  
+    .header__rh-about {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+
+}
+
+.header-mobile {
+  display: none;
 }
 
 .title {
@@ -109,3 +114,23 @@ footer {
   text-align: center;
 }
 
+
+// MEDIA QUERIES
+
+@media only screen and (max-width: 980px) {
+  header {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: $schema3;
+
+    .header-rh__typewriter{
+      font-size: 85px;
+      letter-spacing: 8px;
+    }
+  }
+}

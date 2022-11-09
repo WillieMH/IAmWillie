@@ -1,10 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@media only screen and (max-width: 1200px) {
-  .header-lh {
-    display: none;
-  }
-}
 .collapsible {
   background-color: #003566;
   color: #FFD60A;
@@ -71,31 +66,33 @@ header {
   margin: auto;
   background-color: #003566;
 }
-
-.header-lh {
+header .header__lh {
   width: 33%;
 }
-.header-lh img {
+header .header__lh img {
   max-height: 800px;
 }
-
-.header-rh {
+header .header__rh {
   display: flex;
   flex-direction: column;
   width: 67%;
   margin-top: 30px;
 }
-.header-rh .header-rh__typewriter {
+header .header__rh .header__rh-typewriter {
   font-size: 120px;
   letter-spacing: 8px;
 }
-.header-rh .header-rh__typewriter .tw {
+header .header__rh .header__rh-typewriter .tw {
   font-size: 120px;
   color: #FFD60A;
 }
-.header-rh .header-rh__about {
+header .header__rh .header__rh-about {
   display: flex;
   flex-direction: column;
+}
+
+.header-mobile {
+  display: none;
 }
 
 .title {
@@ -138,4 +135,20 @@ main {
 footer {
   background-color: #001D3D;
   text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+  header {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: #003566;
+  }
+  .header-mobile .header-rh__typewriter {
+    font-size: 85px;
+    letter-spacing: 8px;
+  }
 }/*# sourceMappingURL=style.css.map */

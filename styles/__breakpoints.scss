@@ -1,5 +1,2 @@
-@media only screen and (max-width: 1200px) {
-  .header-lh {
-    display: none;
-  }
-}
+@use "./_variables.scss" as *;
+
