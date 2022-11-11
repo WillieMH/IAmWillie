@@ -82,10 +82,6 @@ header .header__rh .header__rh-typewriter {
   font-size: 120px;
   letter-spacing: 8px;
 }
-header .header__rh .header__rh-typewriter .tw {
-  font-size: 120px;
-  color: #FFD60A;
-}
 header .header__rh .header__rh-about {
   display: flex;
   flex-direction: column;
@@ -102,9 +98,10 @@ header .header__rh .header__rh-about {
 .divider-line1 {
   border: 2px solid #FFC300;
   border-radius: 10px;
+  background-color: #FFC300;
   height: 4px;
   width: 200px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -133,8 +130,25 @@ main {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #001D3D;
   text-align: center;
+  height: 75px;
+}
+footer img {
+  max-height: 50px;
+  background-color: #001D3D;
+}
+
+a:link {
+  text-decoration: none;
+  background-color: #001D3D;
+}
+
+a:visited {
+  background-color: #001D3D;
 }
 
 @media only screen and (max-width: 980px) {
@@ -143,12 +157,25 @@ footer {
   }
   .header-mobile {
     display: flex;
-    width: 80%;
+    width: 95%;
     margin: auto;
     background-color: #003566;
   }
   .header-mobile .header-rh__typewriter {
     font-size: 85px;
     letter-spacing: 8px;
+    line-height: 100%;
+  }
+  .header-mobile img {
+    width: 342px;
+    border-radius: 8px;
+  }
+  main {
+    width: 95%;
+    margin: auto;
+  }
+  .title {
+    font-size: 28px;
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

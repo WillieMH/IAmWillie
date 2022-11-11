@@ -52,11 +52,6 @@ header {
     .header__rh-typewriter {
       font-size: 120px;
       letter-spacing: 8px;
-  
-      .tw {
-        font-size: 120px;
-        color: $schema5;
-      }
     }
   
     .header__rh-about {
@@ -79,9 +74,10 @@ header {
 .divider-line1 {
   border: 2px solid $schema4;
   border-radius: 10px;
+  background-color: $schema4;
   height: 4px;
   width: 200px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -110,9 +106,28 @@ main {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $schema2;
   text-align: center;
+  height: 75px;
+
+  img {
+    max-height: 50px;
+    background-color: $schema2;
+  }
 }
+
+a:link {
+  text-decoration: none;
+  background-color: $schema2;
+}
+
+a:visited {
+  background-color: $schema2;
+}
+
 
 
 // MEDIA QUERIES
@@ -133,5 +148,20 @@ footer {
       letter-spacing: 8px;
       line-height: 100%;
     }
+
+    img {
+      width: 360px * 0.95;
+      border-radius: 8px;
+    }
+  }
+
+  main {
+    width: 95%;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-top: 30px;
   }
 }
