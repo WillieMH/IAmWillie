@@ -1,0 +1,54 @@
+@import "variables.scss";
+@import "text.scss";
+@import "nav.scss";
+@import "breakpoints.scss";
+@import "sidemenu.scss";
+@import "collapsible.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $bg-mid;
+    font-family: $maintext;
+    color: $primary-txt;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+  display: flex;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 35px;
+}
+
+.experience {
+  background-color: $bg-mid;
+
+  button {
+    font-size: 20px;
+  }
+}
+
+.title {
+  font-size: 40px;
+}
+
+.divider-line1 {
+border: 2px solid $primary-txt;
+border-radius: 10px;
+background-color: $primary-txt;
+height: 4px;
+width: 200px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+

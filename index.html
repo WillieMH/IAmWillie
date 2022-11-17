@@ -1,223 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Online CV for Willie Henderson.</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styling/style.css" />
+    <title>Online CV for Willie Henderson</title>
 </head>
 
 <body>
   <nav>
-    <div class="nav__contactlink"><a href="#contactLink">CONTACT ME</a></div>
-    <div class="nav__experiencelink">EMPLOYMENT HISTORY</div>
-    <div class="nav__educationlink">EDUCATION & QUALIFICATIONS</div>
+    <div class="nav__button">GET IN TOUCH</div>
+    <div class="nav__button">EMPLOYMENT HISTORY</div>
+    <div class="nav__button">EDUCATION & QUALIFICATIONS</div>
+    <div class="hamburger" onclick="openNav()">
+      <div class="hamburger1"></div>
+      <div class="hamburger2"></div>
+      <div class="hamburger3"></div>
+    </div>
   </nav>
 
-  <header>
-    <div class="header__lh">
-      <img src="./assets/holdingimg.png" alt="Holding Image">
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Employment History</a>
+      <a href="#">Education & Qualifications</a>
+      <a href="#">Get In Touch</a>
     </div>
-    <div class="header__rh">
-      <div class="header__rh-typewriter"><span class="tw">I</span> Am Willie</div>
-      <div class="header__rh-about">
-        <div class="title">A LITTLE ABOUT ME</div>
-<!-- NEXT TO WORK; Populate about me section -->
-        <div class="divider-line1"></div>
-        <div class="header__rh-about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ad! Iure
-          eligendi, officia assumenda aspernatur fugit quod ea molestias! Tenetur aspernatur sunt quis, accusantium quod
-          id molestias perferendis? 
-          <br/><br/>
-          Debitis, non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          voluptatem ullam, aut, assumenda esse ex cupiditate suscipit quibusdam quasi ad iste laborum praesentium
-          aperiam. Illo, praesentium! 
-          <br/><br/>
-          Eos tempora ab consectetur. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Aspernatur labore officia quis mollitia, quibusdam facilis modi minus soluta est tenetur nobis delectus
-          laboriosam amet rerum commodi perspiciatis, hic ipsum libero.</div>
+  </div>
+
+<main>
+  <header>
+    <div class="img"><img src="./Assets/holdingimg.png" alt=""></div>
+    <div class="about">
+      <div class="typewrite">!!typewriter here!!</div>
+      <div class="title">A WEE BIT ABOUT ME</div>
+      <div class="divider-line1"></div>
+      <div class="bio-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quaerat error maxime delectus molestiae asperiores molestias magnam soluta.
+        Consequuntur quis voluptatum neque molestias doloremque dolorum voluptas esse repudiandae minus dolorem!
       </div>
     </div>
   </header>
 
-  <div class="header-mobile">
-    <div class="header-rh">
-      <div class="header-rh__typewriter">I Am Willie</div>
-      <div class="header-rh__about">
-        <div class="title">A LITTLE ABOUT ME</div>
-<!-- NEXT TO WORK; Populate about me section -->
-        <div class="divider-line1"></div>
-        <div class="header-rh__about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ad! Iure
-          eligendi, officia assumenda aspernatur fugit quod ea molestias! Tenetur aspernatur sunt quis, accusantium quod
-          id molestias perferendis? 
-          <br/><br/>
-          <img src="./assets/1538593950447.jpg" alt="Image of Willie Henderson">
-          <br/><br/>
-          Debitis, non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          voluptatem ullam, aut, assumenda esse ex cupiditate suscipit quibusdam quasi ad iste laborum praesentium
-          aperiam. Illo, praesentium! 
-          <br/><br/>
-          Eos tempora ab consectetur. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Aspernatur labore officia quis mollitia, quibusdam facilis modi minus soluta est tenetur nobis delectus
-          laboriosam amet rerum commodi perspiciatis, hic ipsum libero.</div>
-      </div>
+  <div class="experience">
+    <div class="title">EMPLOYMENT HISTORY</div>
+    <div class="divider-line1"></div>
+<!-- NEXT TO WORK #2; Get collapsibles working -->
+    <div>
+      <button type="button" class="collapsible">Doorstep Delivery Driver, Morrisons (Oct 20 - Present)</button>
+      <div class="content">I started with Morrisons in October 2020 while I was on furlough from my own aviation business.
+        Originally employed as a delivery driver for the doorstep delivery scheme Morrisons had started at the beginning of the covid pandemic
+        to serve elderly and vulnerable customers in Ayrshire who were unable to leave the house and had no access to the internet.
+        <br/><br/>
+        The role entailed picking customers shopping in the store from an order list, delivering the shopping to the customers as well as
+        putting the shopping away for some of the less able customers.  Responsibilities covered the whole process from pick to the delivery as
+        well as ensuring payments and refunds were processed correctly and any other problems were dealt with in a largely autonomous role.
+        <br/><br/>
+        Although, not a part of the job description, it was an essential part of the job to interact with the customers over and above delivering
+        their groceries as some of the customers didn't see anyone from one delivery to the next.  This has helped me develop my interpersonal skills
+        with a group of people that I have never worked with before.
+    </div>
+    <div>
+      <button type="button" class="collapsible">Aircraft Technician/Director, WMH Aviation Ltd (Oct 17 - Oct 21)</button>
+      <div class="content">This was my own company set up to enable me to work independently as an contract mechanical aircraft technician on civilian
+        aircraft.  This included sourcing my own contracts for work and during this time I worked on a variety of aircraft types across the UK and Europe.
+        <br/><br/>
+        The typical contracts worked were base maintenance jobs, carrying out scheduled maintenance tasks on the aircraft and rectifying faults as they arose.
+        All the workplaces required the ability to read and work from aircraft maintenance manuals accurately and the recording of all work carried out on both
+        paper and computerised systems.  All work was done within EASA/CAA regualtions and strict adherence to health and safety processes.
+        <br/><br/>
+        Unfortunatly, due to the downturn in work available during the Covid pandemic and then the change in government tax regulations regarding personal service
+        companies, the business ceased trading.
+    </div>
+    <div>
+      <button type="button" class="collapsible">Aircraft Technician, Morson International (Apr 11 - Oct 17)</button>
+      <div class="content">In April 2011 I had an opportunity to return to aircraft work on Tornado GR4 at RAF Lossiemouth during Op Telic.  This was carrying out
+        rapid maintenance on the aircraft to enable the flying programme to be adhered to which required flexible working hours.  At the end of Op Telic I was
+        offered a position carrying out depth maintenance on Tornado GR4 aircraft at RAF Marham where I worked until October 2017, latterly in a Hydraulic and Pneumatic
+        bay.
+        <br/><br/>
+        On aircraft, the role entailed all aspects of major depth maintenance on the aircraft, from initial strip and technical inspections, to rebuilds and functional
+        tests in preparation of the flight test before the aircraft was returned to service.  As well as the mechanical aspects of the role, record keeping of the work
+        carried out had to carried out and inputted to the engineering computer systems.
+        <br/><br/>
+        The last placement in this role involved stripping, reconditioning, repair and functional testing of aircraft hyrdaulic and pneumatic components.  I moved on from
+        working on Tornado aircraft as the life of the platform was coming to an end in the UK.
+    </div>
+    <div>
+      <button type="button" class="collapsible">Field Service Engineer, Dolby Medical (Aug 09 - Apr 11)</button>
+      <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
+        repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
+    </div>
+    <div>
+      <button type="button" class="collapsible">Computer Technician, Moray PC Clinic (Apr 07 - Feb 09)</button>
+      <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
+        repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
+    </div>
+    <div>
+      <button type="button" class="collapsible">Aircraft Technician, Royal Air Force (Oct 97 - Nov 07)</button>
+      <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
+        repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
     </div>
   </div>
 
-  <main>
-    <div class="experience">
-      <div class="title">EMPLOYMENT HISTORY</div>
-      <div class="divider-line1"></div>
-<!-- NEXT TO WORK #2; Get collapsibles working -->
-      <div>
-        <button type="button" class="collapsible">Doorstep Delivery Driver, Morrisons (Oct 20 - Present)</button>
-        <div class="content">I started with Morrisons in October 2020 while I was on furlough from my own aviation business.
-          Originally employed as a delivery driver for the doorstep delivery scheme Morrisons had started at the beginning of the covid pandemic
-          to serve elderly and vulnerable customers in Ayrshire who were unable to leave the house and had no access to the internet.
-          <br/><br/>
-          The role entailed picking customers shopping in the store from an order list, delivering the shopping to the customers as well as
-          putting the shopping away for some of the less able customers.  Responsibilities covered the whole process from pick to the delivery as
-          well as ensuring payments and refunds were processed correctly and any other problems were dealt with in a largely autonomous role.
-          <br/><br/>
-          Although, not a part of the job description, it was an essential part of the job to interact with the customers over and above delivering
-          their groceries as some of the customers didn't see anyone from one delivery to the next.  This has helped me develop my interpersonal skills
-          with a group of people that I have never worked with before.
-      </div>
-      <div>
-        <button type="button" class="collapsible">Aircraft Technician/Director, WMH Aviation Ltd (Oct 17 - Oct 21)</button>
-        <div class="content">This was my own company set up to enable me to work independently as an contract mechanical aircraft technician on civilian
-          aircraft.  This included sourcing my own contracts for work and during this time I worked on a variety of aircraft types across the UK and Europe.
-          <br/><br/>
-          The typical contracts worked were base maintenance jobs, carrying out scheduled maintenance tasks on the aircraft and rectifying faults as they arose.
-          All the workplaces required the ability to read and work from aircraft maintenance manuals accurately and the recording of all work carried out on both
-          paper and computerised systems.  All work was done within EASA/CAA regualtions and strict adherence to health and safety processes.
-          <br/><br/>
-          Unfortunatly, due to the downturn in work available during the Covid pandemic and then the change in government tax regulations regarding personal service
-          companies, the business ceased trading.
-      </div>
-      <div>
-        <button type="button" class="collapsible">Aircraft Technician, Morson International (Apr 11 - Oct 17)</button>
-        <div class="content">In April 2011 I had an opportunity to return to aircraft work on Tornado GR4 at RAF Lossiemouth during Op Telic.  This was carrying out
-          rapid maintenance on the aircraft to enable the flying programme to be adhered to which required flexible working hours.  At the end of Op Telic I was
-          offered a position carrying out depth maintenance on Tornado GR4 aircraft at RAF Marham where I worked until October 2017, latterly in a Hydraulic and Pneumatic
-          bay.
-          <br/><br/>
-          On aircraft, the role entailed all aspects of major depth maintenance on the aircraft, from initial strip and technical inspections, to rebuilds and functional
-          tests in preparation of the flight test before the aircraft was returned to service.  As well as the mechanical aspects of the role, record keeping of the work
-          carried out had to carried out and inputted to the engineering computer systems.
-          <br/><br/>
-          The last placement in this role involved stripping, reconditioning, repair and functional testing of aircraft hyrdaulic and pneumatic components.  I moved on from
-          working on Tornado aircraft as the life of the platform was coming to an end in the UK.
-      </div>
-      <div>
-        <button type="button" class="collapsible">Field Service Engineer, Dolby Medical (Aug 09 - Apr 11)</button>
-        <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
-          repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
-      </div>
-      <div>
-        <button type="button" class="collapsible">Computer Technician, Moray PC Clinic (Apr 07 - Feb 09)</button>
-        <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
-          repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
-      </div>
-      <div>
-        <button type="button" class="collapsible">Aircraft Technician, Royal Air Force (Oct 97 - Nov 07)</button>
-        <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
-          repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
-      </div>
-    </div>
-
-    <div class="education">
-      <div class="title">QUALIFICATIONS</div>
-      <div class="divider-line1"></div>
-      <div>
-        <button type="button" class="collapsible">BSc Computing With Electronic Engineering, Open University (Yr 1 of 6 Completed)</button>
-        <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
-          repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
-      </div>
-      <div>
-        <button type="button" class="collapsible">Cert. of Higher Education in Business Management, Open University (2021)</button>
-        <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
-          repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
-      </div>
-      <div>
-        <button type="button" class="collapsible">BTEC NC Engineering Aerospace Studies, RAF Cosford (Mar 2001)</button>
-        <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
-          repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
-      </div>
-      <div>
-        <button type="button" class="collapsible">C&G Basic Engineering Competences, RAF Cosford (Oct 1998)</button>
-        <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
-          repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
-      </div>
-      <div>
-        <button type="button" class="collapsible">8 Standard Grades/'O' Levels, James Young High School (Jun 1992)</button>
-        <div class="content">Football football blah de blah de Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Minus veniam a sed reprehenderit consequatur numquam, doloribus quisquam asperiores? Quasi perferendis
-          repellat alias ab a, est libero molestiae asperiores consequatur quaerat!
-      </div>
-    </div>
-
-    <div class="interests">
-      <div class="title">HOBBIES & INTERESTS</div>
-      <div class="divider-line1"></div>
-      <div>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-      </div>
-    </div>
-
-    <div class="contact">
-      <div id="contactLink" class="title">CONTACT ME</div>
-      <div class="divider-line1"></div>
-      <div>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-        <br/><br/>
-      </div>
-    </div>
-  </main>
-
-  
-
-  <footer>
-    <img src="./assets/linkedin.png" alt="LinkedIn Logo - Link">
-  </footer>
+</main>
 
 </body>
-
+<script src="./Scripts/sidemenu.js"></script>
 <script src="./scripts/collapsible.js"></script>
 
 </html>

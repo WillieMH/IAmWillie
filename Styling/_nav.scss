@@ -1,0 +1,58 @@
+@import "breakpoints.scss";
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $bg-dark;
+    height: 60px;
+
+    .nav__button {
+        background-color: $bg-dark;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+
+    .nav__button:hover {
+        background-color: $primary-txt;
+        color: $bg-dark;
+    }
+
+    .hamburger {
+        background-color: $bg-dark;
+    }
+
+    .hamburger1, .hamburger2, .hamburger3 {
+        height: 5px;
+        width: 50px;
+        margin: 10px;
+        background-color: $primary-txt;
+    }
+
+    .hamburger:hover {
+        background-color: $primary-txt;
+
+        .hamburger1, .hamburger2, .hamburger3{
+            height: 5px;
+            width: 50px;
+            margin: 10px;
+            background-color: $bg-dark;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: $tablet) {
+    .nav__button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: $tablet) {
+    .hamburger {
+        display: none;
+        background-color: $bg-dark;
+    }
+}

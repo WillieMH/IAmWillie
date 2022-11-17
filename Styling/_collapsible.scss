@@ -1,25 +1,23 @@
-@use "./_variables.scss" as *;
-
 .collapsible {
-  background-color: $schema3;
-  color: $schema5;
+  background-color: $bg-mid;
+  color: $primary-txt;
   cursor: pointer;
   padding: 10px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.25rem;
+  font-family: $maintext;
 }
 
-.active, .collapsible:hover {
-  background-color: $schema2;
+.active,
+.collapsible:hover {
+  background-color: $bg-light;
 }
-    
+
 .collapsible:after {
-  content: '+';
-  color: $schema5;
+  content: "+";
+  color: $primary-txt;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -33,5 +31,6 @@
   padding: 10px 10px 20px 20px;
   display: none;
   overflow: hidden;
-  background-color: $schema3;
+  background-color: $bg-light;
+  font-size: 1rem;
 }
