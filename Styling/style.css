@@ -47,10 +47,6 @@ nav .hamburger:hover .hamburger1, nav .hamburger:hover .hamburger2, nav .hamburg
     background-color: #000814;
   }
 }
-body {
-  font-family: "Lato", sans-serif;
-}
-
 .overlay {
   height: 100%;
   width: 0;
