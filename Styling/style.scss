@@ -23,11 +23,30 @@ header {
   display: flex;
 }
 
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typewrite {
+  font-size: 120px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
-
+  margin-left: 35px;
   margin-top: 35px;
+
+  .title {
+    margin-top: 60px;
+  }
 }
 
 .experience {

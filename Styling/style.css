@@ -150,10 +150,35 @@ header {
   display: flex;
 }
 
+span {
+  border-right: 0.05em solid;
+  -webkit-animation: caret 1s steps(1) infinite;
+          animation: caret 1s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+.typewrite {
+  font-size: 120px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
+  margin-left: 35px;
   margin-top: 35px;
+}
+.about .title {
+  margin-top: 60px;
 }
 
 .experience {
