@@ -36,17 +36,6 @@ nav .hamburger:hover .hamburger1, nav .hamburger:hover .hamburger2, nav .hamburg
   background-color: #000814;
 }
 
-@media only screen and (max-width: 750px) {
-  .nav__button {
-    display: none;
-  }
-}
-@media only screen and (min-width: 750px) {
-  .hamburger {
-    display: none;
-    background-color: #000814;
-  }
-}
 .overlay {
   height: 100%;
   width: 0;
@@ -128,6 +117,20 @@ nav .hamburger:hover .hamburger1, nav .hamburger:hover .hamburger2, nav .hamburg
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 750px) {
+  .nav__button {
+    display: none;
+  }
+  .title {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .hamburger {
+    display: none;
+    background-color: #000814;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -164,7 +167,7 @@ span {
   }
 }
 .typewrite {
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .about {
@@ -196,4 +199,40 @@ span {
   width: 200px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .typewrite {
+    font-size: 85px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .typewrite {
+    font-size: 65px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .typewrite {
+    display: none;
+  }
+  .about {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .nav__button {
+    display: none;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .image1 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .hamburger {
+    display: none;
+    background-color: #000814;
+  }
 }/*# sourceMappingURL=style.css.map */

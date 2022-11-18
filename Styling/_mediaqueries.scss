@@ -1,0 +1,17 @@
+
+@media only screen and (max-width: $tablet) {
+  .nav__button {
+    display: none;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .hamburger {
+    display: none;
+    background-color: $bg-dark;
+  }
+}

@@ -4,6 +4,7 @@
 @import "breakpoints.scss";
 @import "sidemenu.scss";
 @import "collapsible.scss";
+@import "mediaqueries.scss";
 
 * {
     margin: 0;
@@ -35,7 +36,7 @@ span {
 }
 
 .typewrite {
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .about {
@@ -71,3 +72,49 @@ margin-top: 10px;
 margin-bottom: 10px;
 }
 
+
+// MEDIA QUERIES //
+// typewriter sizing
+@media only screen and (max-width: $tw-normal) {
+  .typewrite {
+    font-size: 85px;
+  }
+}
+
+@media only screen and (max-width: $tw-mid) {
+  .typewrite {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (max-width: $tw-low) {
+  .typewrite {
+    display: none;
+  }
+  .about {
+    margin-top: 0;
+  }
+
+}
+// ^^ typewriter sizing
+
+@media only screen and (max-width: $tablet) {
+  .nav__button {
+    display: none;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .image1 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .hamburger {
+    display: none;
+    background-color: $bg-dark;
+  }
+}
