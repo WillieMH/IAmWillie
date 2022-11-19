@@ -114,7 +114,6 @@ nav .hamburger:hover .hamburger1, nav .hamburger:hover .hamburger2, nav .hamburg
   display: none;
   overflow: hidden;
   background-color: rgb(0, 53, 102);
-  font-size: 1rem;
 }
 
 @media only screen and (max-width: 750px) {
@@ -182,9 +181,10 @@ span {
 
 .experience {
   background-color: #001D3D;
+  margin-top: 30px;
 }
 .experience button {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .title {
@@ -223,8 +223,11 @@ span {
   .nav__button {
     display: none;
   }
+  header {
+    display: none;
+  }
   .title {
-    font-size: 16px;
+    font-size: 26px;
   }
   .image1 {
     display: none;
@@ -234,5 +237,8 @@ span {
   .hamburger {
     display: none;
     background-color: #000814;
+  }
+  .header2 {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

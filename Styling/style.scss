@@ -52,9 +52,10 @@ span {
 
 .experience {
   background-color: $bg-mid;
+  margin-top: 30px;
 
   button {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -103,8 +104,12 @@ margin-bottom: 10px;
     display: none;
   }
 
+  header {
+    display: none;
+  }
+
   .title {
-    font-size: 16px;
+    font-size: 26px;
   }
 
   .image1 {
@@ -116,5 +121,9 @@ margin-bottom: 10px;
   .hamburger {
     display: none;
     background-color: $bg-dark;
+  }
+
+  .header2 {
+    display: none;
   }
 }
